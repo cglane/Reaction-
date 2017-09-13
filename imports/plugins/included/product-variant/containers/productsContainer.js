@@ -105,7 +105,7 @@ function composer(props, onData) {
   const tag = Tags.findOne({ slug: slug }) || Tags.findOne(slug);
   const scrollLimit = Session.get("productScrollLimit");
   let tags = {}; // this could be shop default implementation needed
-
+  console.log(slug, "slug");
   if (tag) {
     tags = { tags: [tag._id] };
   }
